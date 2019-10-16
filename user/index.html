@@ -16,43 +16,46 @@
 
     <link rel="stylesheet" href="index.css">
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
     <title>Wingrow Agritech</title>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js//all.js"></script>
 </head>
 
 <body>
     <!--Navigation bar-->
-    <nav class="navbar navbar-expand-lg navigation">
-        <a class="navbar-brand" href="index.html">
-            <img src="logo.png" width="250" height="80" class="d-inline-block align-top" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#list">
-            <span class="navbar-toggler-icon">
-                <hr>
-                <hr>
-                <hr>
-            </span>
-        </button>
+    <header>
+        <nav class="navbar navbar-expand-lg navigation">
+            <a class="navbar-brand" href="index.html">
+                <img src="../images/logo.png" width="250" height="80" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#list">
+                <span class="navbar-toggler-icon">
+                    <hr>
+                    <hr>
+                    <hr>
+                </span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="list">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Market</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Contact Us</a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">options</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+            <div class="collapse navbar-collapse" id="list">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link menu">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link menu">Market</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="mailto:adityagiradkar11@gmail.com" class="nav-link menu">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link menu">options</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <!--main content body-->
     <div class="content">
@@ -83,7 +86,7 @@
                     <div class="row">
                         <div class="col-lg-4 img-fluid col-md-6">
                             <div class="card vegi" style="width: 18rem;">
-                                <img src="tomato.jpg" class="card-img-top" alt="...">
+                                <img src="../images/tomato.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title" style="text-align: center;">Tomato</h5>
                                 </div>
@@ -95,16 +98,16 @@
                                         <div class="col-6">
                                             <b style="color: green;">10</b><br>Available
                                         </div>
-                                    </div><br><br>
+                                    </div><br>
                                     <p>Enter the quantity you need (kg).</p>
                                     <input type="number" name="required">
-                                    <input type="submit" class="btn btn-primary" value="Add">
+                                    <input type="submit" class="btn btn-primary" value="Add" onclick="update()">
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
                             <div class="card vegi" style="width: 18rem;">
-                                <img src="pumpkin.jpg" class="card-img-top" alt="...">
+                                <img src="../images/pumpkin.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title" style="text-align: center;">Pumkin</h5>
                                 </div>
@@ -116,7 +119,7 @@
                                         <div class="col-6">
                                             <b style="color: green;">10</b><br>Available
                                         </div>
-                                    </div><br><br>
+                                    </div><br>
                                     <p>Enter the quantity you need (kg).</p>
                                     <input type="number" name="required">
                                     <input type="submit" class="btn btn-primary" value="Add">
@@ -125,7 +128,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6">
                             <div class="card vegi" style="width: 18rem;">
-                                <img src="Ladies-finger.jpg" class="card-img-top" alt="...">
+                                <img src="../images/Ladies-finger.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title" style="text-align: center;">Ladies Finger</h5>
                                 </div>
@@ -137,7 +140,7 @@
                                         <div class="col-6">
                                             <b style="color: green;">10</b><br>Available
                                         </div>
-                                    </div><br><br>
+                                    </div><br>
                                     <p>Enter the quantity you need (kg).</p>
                                     <input type="number" name="required">
                                     <input type="submit" class="btn btn-primary" value="Add">
@@ -146,7 +149,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6">
                             <div class="card vegi" style="width: 18rem;">
-                                <img src="bit-root.jpg" class="card-img-top" alt="...">
+                                <img src="../images/bit-root.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title" style="text-align: center;">Beetroot</h5>
                                 </div>
@@ -158,7 +161,7 @@
                                         <div class="col-6">
                                             <b style="color: green;">10</b><br>Available
                                         </div>
-                                    </div><br><br>
+                                    </div><br>
                                     <p>Enter the quantity you need (kg).</p>
                                     <input type="number" name="required">
                                     <input type="submit" class="btn btn-primary" value="Add">
@@ -176,7 +179,7 @@
 
                         <div class="row" style="padding-top: 0;">
                             <div class="col-md-5 map-col">
-                                <h3 style="text-align: center; margin-bottom: 10%;">Todays Market : </h3>
+                                <h3 style="text-align: center; margin-bottom: 10%;">Todays Market : <b id="current-day"></b></h3>
                                 <div class="add">
                                     <strong>Address : </strong>
                                     <p>Abcd mldmlmdsj vdsvjdsvmds nvijdv dvnidsjvkd vdndn nid vjsdbv jn.</p>
@@ -188,44 +191,35 @@
                                     <p>6.50 pm</p>
                                 </div>
                             </div>
+                            <!--today's map location (location src is given in js file)-->
                             <div class="col-md-7">
                                 <div class="map-responsive">
-                                    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.4319798055776!2d73.86543031439695!3d18.464082075719674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ea950f616219%3A0x321bdae2cea9f064!2sVishwakarma%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1569699113526!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe> </p>
+                                    <p><iframe src="" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" id="current"></iframe> </p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <hr style="height: 2px; background-color: black;">
-
+                    
+                    
+                    <!--Next day map locations-->
                     <div>
-                        <h4>Next Market locations</h4>
+                        <h4><b>Next Market locations</b></h4>
                         <div class="row">
-                            <div class="col-lg-3 col-md-4 col-sm-6 map-col">
-                                <h5>Monday</h5>
+                            <div class="col-sm-4 map-col">
+                                <h5 id="next"></h5>
                                 <div class="map-responsive">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.4319798055867!2d73.86543031439693!3d18.464082075719663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ea950f616219%3A0x321bdae2cea9f064!2sVishwakarma%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1569745970324!5m2!1sen!2sin" width="200" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                                    <iframe src="" width="200" height="300" frameborder="0" style="border:0;" allowfullscreen="" id="next-day"></iframe>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-4 col-sm-6 map-col">
-                                <h5>Tuesday</h5>
+                            <div class="col-sm-4 map-col">
+                                <h5 id="next-to-next"></h5>
                                 <div class="map-responsive">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.4319798055867!2d73.86543031439693!3d18.464082075719663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ea950f616219%3A0x321bdae2cea9f064!2sVishwakarma%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1569745970324!5m2!1sen!2sin" width="200" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                                    <iframe src="" width="200" height="300" frameborder="0" style="border:0;" allowfullscreen="" id="next-to-next-day"></iframe>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-4 col-sm-6 map-col">
-                                <h5>Wednesday</h5>
-                                <div class="map-responsive">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.4319798055867!2d73.86543031439693!3d18.464082075719663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ea950f616219%3A0x321bdae2cea9f064!2sVishwakarma%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1569745970324!5m2!1sen!2sin" width="200" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-6 map-col">
-                                <h5>Thrusday</h5>
-                                <div class="map-responsive">
 
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.4319798055867!2d73.86543031439693!3d18.464082075719663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ea950f616219%3A0x321bdae2cea9f064!2sVishwakarma%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1569745970324!5m2!1sen!2sin" width="200" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -241,8 +235,52 @@
 
 
     <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-content">
+                    <p>Contact Details : </p>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li>Abc : +9123456789</li>
+                        <li>gbd : +5463728919</li>
+                        <li>email : wingrowagritech@gmail.com</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="footer-content">
+                        <p>Our social media support</p>
+                        <a class="fb-ic social-icon" href="https://www.facebook.com">
+                            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <a class="tw-ic social-icon" href="https://twitter.com">
+                            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <a class="ins-ic social-icon" href="https://www.instagram.com/?hl=en">
+                            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-content">
+                        <center>
+                            <p>Our office location</p>
+                        </center>
+                        <div class="map-responsive">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.4319798055867!2d73.86543031439693!3d18.464082075719663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ea950f616219%3A0x321bdae2cea9f064!2sVishwakarma%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1569745970324!5m2!1sen!2sin" width="200" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="background-color: white;">
+            <center>
+                <p>&#169; All coppyrights are recived.</p>
+            </center>
+        </div>
 
     </footer>
+
+    <script src="index.js"></script>
 
 </body>
 
